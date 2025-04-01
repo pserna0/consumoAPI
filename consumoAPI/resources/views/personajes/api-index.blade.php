@@ -1,3 +1,5 @@
+@extends('layouts.app')
+
 <div>
     <h1>Personajes Api</h1>
 
@@ -19,7 +21,7 @@
                     <td>{{ $personaje['name'] }}</td>
                     <td>{{ $personaje['status'] }}</td>
                     <td>{{ $personaje['species'] }}</td>
-                    <td><a href="{{ route('personajes.show', $personaje['id']) }}"></a></td>
+                    <td><a href="{{ route('personajes.show', $personaje['id']) }}">Ver</a></td>
                 </tr>
                 @endforeach
             </tbody>

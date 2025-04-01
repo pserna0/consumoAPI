@@ -1,3 +1,5 @@
+@extends('layouts.app')
+
 <div>
     <h1>Personajes BD</h1>
         <div>

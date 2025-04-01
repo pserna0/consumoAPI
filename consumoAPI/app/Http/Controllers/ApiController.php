@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\apiPersonajes;
 use Illuminate\Support\Facades\Http;
+use Laravel\Pail\ValueObjects\Origin\Console;
 
 class ApiController extends Controller
 {
@@ -17,7 +18,7 @@ class ApiController extends Controller
     public function indexApi()
     {
         $response = Http::get('https://rickandmortyapi.com/api/character');
-        $personajes = $response->json()['data'];
+        $personajes = $response->json()['results'];
         
         return view('personajes.api-index', compact('personajes'));
     }

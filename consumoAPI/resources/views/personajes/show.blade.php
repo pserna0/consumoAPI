@@ -1,3 +1,5 @@
+@extends('layouts.app')
+
 <div>
     <h1>Estas viendo a {{ $personajes -> name }}</h1>
     <div>

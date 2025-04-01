@@ -1,3 +1,5 @@
+@extends('layouts.app')
+
 <div>
     <h1>Editar {{ $personajes -> name }}</h1>
 
